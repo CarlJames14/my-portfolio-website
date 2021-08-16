@@ -1,0 +1,172 @@
+@use '../util' as *;
+
+.header {
+  &.open {
+    overflow-y: hidden;
+
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+        background-color: $primary-color;
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+        background-color: $primary-color;
+      }
+    }
+
+    .header__links {
+      transform: translateY(0);
+      opacity: 1;
+      animation: slide-down 300ms ease-in-out forwards;
+    }
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: $white;
+
+    padding: rem(24);
+
+    @include breakpoint(medium) {
+      padding: rem(15) rem(64);
+    }
+
+    @include breakpoint(xlarge) {
+      max-width: rem(1920);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__logo {
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__links {
+      ul {
+        margin: 0;
+      }
+      li {
+        margin-bottom: 0 !important;
+      }
+      a {
+        color: $black;
+        cursor: pointer;
+        font-size: rem(16);
+        display: inline-block;
+
+        &:hover {
+          transform: scale(1.1);
+          border-bottom: 3px solid $primary-color;
+          padding: rem(10) 0;
+        }
+      }
+    }
+    .btn {
+      color: $primary-color;
+      font-size: rem(16);
+      padding: rem(10) rem(30);
+      border: 2px solid $primary-color;
+      border-radius: rem(10);
+      cursor: pointer;
+
+      &:hover {
+        padding: rem(10) rem(30);
+        transform: scale(1);
+        color: $secondary-white;
+        background-color: $primary-color;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__menu {
+    > span {
+      background-color: $primary-color;
+      display: block;
+      width: rem(32);
+      height: rem(3);
+      cursor: pointer;
+
+      transition: 300ms all ease-in-out;
+      transform-origin: rem(7) rem(1);
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__links {
+    height: rem(300);
+    width: 100%;
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    margin-top: rem(48);
+    padding: 0;
+    background-color: $white;
+    z-index: 1;
+
+    @include breakpoint(medium) {
+      height: rem(450);
+    }
+
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      font-size: rem(16);
+      color: $black;
+      cursor: pointer;
+
+      > i {
+        margin-right: rem(10);
+        color: $primary-color;
+      }
+      &:hover {
+        border-bottom: rem(2) solid $primary-color;
+      }
+    }
+
+    .btn {
+      color: $primary-color;
+
+      font-size: rem(16);
+      padding: rem(10) rem(30);
+      border: 2px solid $primary-color;
+      border-radius: rem(10);
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary-white;
+        background-color: $primary-color;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+.close {
+  animation: slide-up 300ms ease-in-out forwards;
+}
+
+.active {
+  padding: rem(16);
+  border-bottom: 5px solid $primary-color;
+}

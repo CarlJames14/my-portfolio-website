@@ -1,0 +1,10 @@
+/node_modules
+
+/dist
+
+/.cache
+
+*.log
+
+!important/.cache
+.cache/6c/4cc98cd3e67e6f0ffb71f8445d21da.json

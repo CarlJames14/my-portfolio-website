@@ -1,0 +1,97 @@
+@use '../util' as *;
+
+.section-break-1 {
+  width: 100%;
+  height: rem(187);
+  background-color: $secondary-white;
+
+  @include breakpoint(large) {
+    height: rem(130);
+  }
+
+  &__content {
+    max-width: rem(300);
+
+    @include breakpoint(medium) {
+      max-width: rem(500);
+    }
+
+    @include breakpoint(large) {
+      max-width: rem(1200);
+      width: 100%;
+    }
+    h3 {
+      text-align: center;
+      font-size: rem(24);
+      font-weight: 500;
+      color: $black;
+      line-height: 1.3;
+
+      @include breakpoint(large) {
+        padding: 0 rem(32);
+        text-align: unset;
+        font-size: rem(28);
+        max-width: rem(600);
+      }
+    }
+  }
+}
+
+.section-break-2 {
+  width: 100%;
+  height: rem(187);
+  background-color: $primary-color;
+
+  @include breakpoint(large) {
+    height: rem(130);
+  }
+
+  &__content {
+    max-width: rem(300);
+
+    @include breakpoint(medium) {
+      max-width: rem(800);
+    }
+
+    @include breakpoint(large) {
+      max-width: rem(1200);
+      width: 100%;
+      padding: rem(32);
+    }
+    h3 {
+      font-size: rem(26);
+      font-weight: 500;
+      color: $white;
+      line-height: 1.3;
+
+      @include breakpoint(medium) {
+        padding: 0 rem(32);
+        text-align: unset;
+        font-size: rem(32);
+        max-width: rem(800);
+      }
+
+      @include breakpoint(large) {
+        padding: 0 rem(32);
+        text-align: unset;
+        font-size: rem(40);
+        max-width: rem(1000);
+      }
+    }
+
+    i {
+      color: $white;
+      font-size: rem(55);
+
+      @include breakpoint(medium) {
+        margin-right: rem(32);
+        font-size: rem(60);
+      }
+
+      @include breakpoint(large) {
+        margin-right: rem(32);
+        font-size: rem(70);
+      }
+    }
+  }
+}

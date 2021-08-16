@@ -1,0 +1,41 @@
+@use '../util' as *;
+$font-family: "Poppins", sans-serif;
+
+body {
+  font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: rem(55);
+}
+
+h2 {
+  font-size: rem(48);
+}
+
+h3 {
+  font-size: rem(32);
+}
+
+h4 {
+  font-size: rem(20);
+}
+
+p {
+  font-size: rem(16);
+}

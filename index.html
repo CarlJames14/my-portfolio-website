@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A showcase of my works in the field of web development"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, carl james, personal website, portfolio website, carl james roxas"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ecf7cf11f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./app/scss/style.scss" />
+
+    <!-- Javascript -->
+    <script src="./app/js/script.js" defer></script>
+
+
+    <title>Portfolio | Carl James Roxas</title>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header class="header">
+      <nav class="nav flex flex-ai-c flex-jc-sb">
+        <a href="/" class="nav__logo">
+          <img src="./assets/logo.png" alt="Carl James Roxas" />
+        </a>
+
+        <!-- Hamburger -->
+        <div id="menu" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Nav Links desktop -->
+
+        <ul id="navbar" class="nav__links flex flex-ai-c hide-for-mobile">
+          <li><a id="a" href="#home">Home</a></li>
+          <li><a id="a" href="#about">About</a></li>
+          <li><a id="a" href="#services">Services</a></li>
+          <li><a id="a" href="./portfolio.html">Portfolio</a></li>
+          <li><a id="a" class="btn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav links mobile -->
+      <div
+        class="header__links flex flex-ai-c flex-jc-c flex-d-c hide-for-desktop"
+      >
+        <ul class="flex flex-ai-c flex-d-c flex-jc-c">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user-circle"></i>About</a>
+          </li>
+          <li>
+            <a href="#services"><i class="fas fa-suitcase"></i>Services</a>
+          </li>
+          <li>
+            <a href="./portfolio.html"><i class="fas fa-code"></i>Portfolio</a>
+          </li>
+        </ul>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Hero Section -->
+    <section id="home" class="hero flex flex-ai-c flex-d-c flex-jc-c">
+      <div class="hero__content">
+        <h1>The passionate <span>Web Developer</span> your looking for.</h1>
+      </div>
+      <h5 class="big-text hide-for-mobile">carl james roxas</h5>
+      <a class="btn" href="#projects">Explore my featured works</a>
+      <div class="arrow">
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+      <div class="hero__links flex flex-ai-c flex-jc-c">
+        <a href="https://www.facebook.com/crljms.rxs/" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://twitter.com/Carllljamessss" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="https://github.com/CarlJames14" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/carl-james-r-b66350201/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Section break -->
+    <div class="section-break-1 flex flex-ai-c flex-jc-c">
+      <div class="section-break-1__content flex flex-ai-c flex-jc-sb">
+        <h3>
+          I specialise in creating interactive experiences and functional
+          website.
+        </h3>
+        <img
+          src="./assets/logo-black-lowopacity.png"
+          alt="Carl James Roxas"
+          class="hide-for-mobile"
+        />
+      </div>
+    </div>
+    <!-- Section break -->
+
+    <!-- Start of About Section -->
+    <section class="aboutSection flex flex-ai-c flex-d-c flex-jc-c" id="about">
+      <div class="aboutSection__container flex flex-d-c flex-ai-c">
+        <h2 class="about-title">ABOUT <span>ME</span></h2>
+        <img src="./assets/about-pic.png" />
+
+        <div
+          class="
+            aboutSection__container__content
+            flex flex-d-c flex-ai-c flex-jc-c
+          "
+        >
+          <h3>Hi I am Carl James Roxas</h3>
+          <h4>
+            I am a self taught web developer based in Bulacan, Philippines.
+            <br />
+            Currently a college student studying Bachelor of Science in
+            Information Technology. I’m obsessed on making website and learning
+            every thing about web development. <br />
+            Very passionate individual on pursuing this field and highly
+            motivated to become successful in this career.
+          </h4>
+          <a href="" target="_blank" class="btn">DOWNLOAD CV</a>
+        </div>
+      </div>
+
+      <!-- skills -->
+      <div class="aboutSection__skills flex flex-d-c flex-jc-c flex-ai-c">
+        <h2>TECHNICAL <span>SKILLS</span></h2>
+        <div class="aboutSection__skills__container flex flex-d-c flex-ai-c">
+          <div class="row">
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-html5"></i>
+              <h4>HTML</h4>
+            </div>
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-css3"></i>
+              <h4>CSS</h4>
+            </div>
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-js"></i>
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-sass"></i>
+              <h4>Sass</h4>
+            </div>
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-git-square"></i>
+              <h4>Git</h4>
+            </div>
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-react"></i>
+              <h4>React Js</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="flex flex-d-c flex-ai-c">
+              <i class="fab fa-figma figma"></i>
+              <h4>Figma</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Start of Services Section -->
+    <section
+      class="servicesSection flex flex-ai-c flex-jc-c flex-d-c"
+      id="services"
+    >
+      <div class="servicesSection__container flex flex-ai-c flex-jc-c flex-d-c">
+        <h2><span> WHAT I DO / </span> SERVICES</h2>
+        <div class="servicesSection__container__cards">
+          <div class="servicesSection__container__cards__row">
+            <div
+              class="
+                servicesSection__container__cards__card
+                flex flex-ai-c flex-jc-c flex-d-c
+              "
+            >
+              <img src="./assets/icon-responsive.png" />
+              <h3>RESPONSIVE WEBSITE</h3>
+              <h4>
+                Develop a responsive website layout and assure to work in every
+                screen size for better user experience.
+              </h4>
+            </div>
+            <div
+              class="
+                servicesSection__container__cards__card
+                flex flex-ai-c flex-jc-c flex-d-c
+              "
+            >
+              <img src="./assets/icon-dev.png" />
+              <h3>Convert your design into a working website.</h3>
+              <h4>
+                Make your mockups and ui prototypes into an ideal functional
+                website.
+              </h4>
+            </div>
+          </div>
+          <div
+            class="
+              servicesSection__container__cards__card
+              flex flex-ai-c flex-jc-c flex-d-c
+            "
+          >
+            <img src="./assets/icon-collab.png" />
+            <h3>Team Collaboration</h3>
+            <h4>
+              Can work as part of a team and has outstanding collaboration
+              skills.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- Section break -->
+    <div class="section-break-2 flex flex-ai-c flex-jc-c">
+      <div class="section-break-2__content flex flex-ai-c flex-jc-sb">
+        <h3>Passion, Dedication and a lot of coffee.</h3>
+        <i class="fas fa-coffee"></i>
+      </div>
+    </div>
+    <!-- Section break -->
+
+    <!-- Start of Projects Section -->
+    <section class="projectsSection flex flex-ai-c flex-d-c" id="projects">
+      <div class="projectsSection__container flex flex-ai-c flex-d-c flex-jc-c">
+        <h2><span> FEATURED </span> PROJECTS</h2>
+        <div
+          class="
+            projectsSection__container__projects
+            flex flex-ai-c flex-d-c flex-jc-sb
+          "
+        >
+        <!-- project 1 -->
+            <div class="projectsSection__container__projects__project">
+              <div class="id-1">
+                <img src="./assets/preview-website.png" alt="" />
+                <div class="content flex flex-ai-c flex-d-c">
+                  <h3>Title Test</h3>
+                  <p>test Desc Lorem ipsum dolor sit amet.</p>
+                  <div class="btn-group">
+                    <a href="/"><i class="fab fa-github"></i></a>
+                    <a href="/"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- project 2 -->
+            <div class="projectsSection__container__projects__project">
+              <div class="id-2">
+                <img src="./assets/preview-website.png" alt="" />
+                <div class="content flex flex-ai-c flex-d-c">
+                  <h3>Title Test</h3>
+                  <p>test Desc Lorem ipsum dolor sit amet.</p>
+                  <div class="btn-group">
+                    <a href="/"><i class="fab fa-github"></i></a>
+                    <a href="/"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- project 3 -->
+            <div class="projectsSection__container__projects__project">
+              <div class="id-3">
+                <img src="./assets/covid-19-today.png" alt="" />
+                <div class="content flex flex-ai-c flex-d-c">
+                  <h3>Covid-19 Today</h3>
+                  <p>A covid cases tracker that I made to practice fetching data from an API. the api that I used in this project is from <a href="https://api.covid19api.com/">covid19api.com</a> </p>
+                  <h4>HTML | Css | Vanilla JavaScript | API</h4>
+                  <div class="btn-group">
+                    <a href="https://github.com/CarlJames14/Covid-19-Today" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://covid-19-today.infinityfreeapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="see-more" href="./portfolio.html"> <span>see</span> more..</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Projects Section -->
+
+    <!-- Start of Contact Section -->
+    <section class="contactSection flex flex-ai-c flex-jc-c" id="contact">
+      <div class="contactSection__container">
+        <h1>This is Contact Section</h1>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </body>
+</html>
