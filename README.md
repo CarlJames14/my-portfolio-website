@@ -11,3 +11,5 @@ Compare to the version 1 here in my github repositories that made with React JS,
 ### You can view the live website in this URL :tada:
 
 https://carljamesroxas.netlify.app/
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)

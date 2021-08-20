@@ -1,15 +1,170 @@
 @use '../util' as *;
 
 .contactSection {
-  height: 90vh;
   width: 100%;
   background-color: $primary-color;
+  padding: rem(16);
 
   &__container {
     max-width: rem(1200);
+    width: 100%;
+    margin: rem(55) 0;
+
+    @include breakpoint(large) {
+      max-width: rem(1200);
+    }
+
+    h3 {
+      color: $white;
+      font-size: rem(24);
+      font-weight: 400;
+    }
 
     h1 {
       color: $white;
+      font-size: rem(30);
+      margin-top: rem(16);
+
+      @include breakpoint(medium) {
+        font-size: rem(48);
+      }
     }
+
+    &__content {
+      @include breakpoint(large) {
+        flex-direction: row !important;
+        margin-top: rem(32);
+        width: 100%;
+      }
+      .form {
+        background-color: $white;
+        border-radius: rem(20);
+        padding: rem(32) rem(16);
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      .links {
+        width: 100%;
+        margin-top: rem(48);
+
+        @include breakpoint(large) {
+          margin-top: 0;
+        }
+        .contact {
+          @include breakpoint(large) {
+            margin-bottom: rem(55);
+          }
+          img {
+            margin-bottom: rem(16);
+          }
+
+          h4 {
+            color: $white;
+            font-weight: 400;
+            font-size: rem(16);
+          }
+        }
+
+        .social-links {
+          margin-top: 48px;
+
+          h3 {
+            font-weight: 600;
+          }
+
+          &__container {
+            margin-top: rem(16);
+
+            a {
+              color: $white;
+              margin-bottom: rem(16);
+              display: inline-block;
+
+              &:hover {
+                color: $black;
+                transform: scale(1.1);
+                transition: 300ms ease-in-out;
+
+                i {
+                  color: $black;
+                  transition: 300ms ease-in-out;
+                }
+              }
+
+              i {
+                font-size: rem(22);
+                color: $white;
+                margin-right: rem(16);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+form {
+  padding: rem(16);
+  width: 100%;
+  height: rem(548);
+
+  @include breakpoint(large) {
+    max-width: rem(705);
+    height: rem(648);
+  }
+}
+label {
+  color: $gray;
+  font-size: rem(16);
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  height: rem(48);
+  width: 100%;
+  border-bottom: rem(3) solid $gray;
+  margin-bottom: rem(16);
+  font-size: rem(18);
+
+  @include breakpoint(large) {
+    margin-bottom: rem(22);
+  }
+}
+
+textarea {
+  width: 100%;
+  border-bottom: rem(3) solid $gray;
+  height: rem(227);
+  font-size: rem(18);
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: $primary-color;
+  color: $white;
+  padding: rem(20) rem(32);
+  border-radius: rem(10);
+  font-size: rem(22);
+  position: absolute;
+  bottom: rem(10);
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+
+  i {
+    font-size: rem(32);
+    margin-right: rem(16);
+  }
+
+  @include breakpoint(large) {
+    bottom: rem(40);
   }
 }
