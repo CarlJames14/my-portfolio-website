@@ -1,17 +1,25 @@
 {
   "name": "portfoliov2",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Portfolio | Carl James Roxas](/assets/portfolio-preview.png)",
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./index.html",
     "build": "parcel buid ./index.html"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlJames14/my-portfolio-website.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlJames14/my-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/CarlJames14/my-portfolio-website#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.36.0"
+    "sass": "^1.38.1"
   }
 }

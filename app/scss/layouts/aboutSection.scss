@@ -96,7 +96,7 @@
 
         @include breakpoint(large) {
           position: absolute;
-          bottom: rem(30);
+          bottom: rem(-30);
           right: rem(70);
         }
       }

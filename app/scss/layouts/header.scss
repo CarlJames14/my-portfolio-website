@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     z-index: 9;
-    width: 100%;
+    width: 100vw;
     background-color: $white;
 
     padding: rem(24);
@@ -169,4 +169,65 @@
 .active {
   padding: rem(16);
   border-bottom: 5px solid $primary-color;
+}
+
+.portfolio__header {
+  .nav {
+    padding: rem(24);
+    width: rem(1200);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      color: $black;
+      font-size: rem(22);
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $primary-color;
+        transition: 300ms ease-in-out;
+
+        i {
+          color: $primary-color;
+          transition: 300ms ease-in-out;
+        }
+      }
+
+      i {
+        margin-right: rem(16);
+      }
+    }
+  }
+}
+
+.up {
+  color: $white;
+  position: fixed;
+  bottom: rem(40);
+  right: 5%;
+  background-color: $primary-color;
+  border-radius: 50%;
+  width: rem(80);
+  height: rem(80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 12px rgba($white, 0.5);
+  z-index: 9;
+
+  @include breakpoint(xlarge) {
+    right: 20%;
+  }
+
+  @include breakpoint-down(small) {
+    width: rem(60);
+    height: rem(60);
+  }
+
+  i {
+    font-size: rem(32);
+  }
 }

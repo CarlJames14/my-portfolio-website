@@ -77,11 +77,6 @@
           }
         }
 
-        &:hover {
-          transform: scale(1.05);
-          transition: 300ms ease-in-out;
-        }
-
         img {
           width: rem(70);
           height: rem(60);

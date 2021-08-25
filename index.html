@@ -30,15 +30,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./app/scss/style.scss" />
 
-    <!-- Javascript -->
-    <script src="./app/js/script.js" defer></script>
+
+    
 
 
     <title>Portfolio | Carl James Roxas</title>
   </head>
   <body>
     <!-- Start of Header -->
-    <header class="header">
+    <header class="header" id="header" >
       <nav class="nav flex flex-ai-c flex-jc-sb">
         <a href="/" class="nav__logo">
           <img src="./assets/logo.png" alt="Carl James Roxas" />
@@ -57,7 +57,7 @@
           <li><a id="a" href="#home">Home</a></li>
           <li><a id="a" href="#about">About</a></li>
           <li><a id="a" href="#services">Services</a></li>
-          <li><a id="a" href="./portfolio.html">Portfolio</a></li>
+          <li><a id="a" href="./portfolio.html">Projects</a></li>
           <li><a id="a" class="btn" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -77,21 +77,26 @@
             <a href="#services"><i class="fas fa-suitcase"></i>Services</a>
           </li>
           <li>
-            <a href="./portfolio.html"><i class="fas fa-code"></i>Portfolio</a>
+            <a href="./portfolio.html"><i class="fas fa-code"></i>Projects</a>
           </li>
         </ul>
         <a class="btn" href="#contact">Contact</a>
       </div>
+      <a id="back" href="#home">
+      <span class="up"><i class="fas fa-arrow-up"></i></span>
+      </a>
     </header>
     <!-- End of Header -->
 
     <!-- Start of Hero Section -->
     <section id="home" class="hero flex flex-ai-c flex-d-c flex-jc-c">
+
       <div class="hero__content">
         <h1>The passionate <span>Web Developer</span> your looking for.</h1>
       </div>
       <h5 class="big-text hide-for-mobile">carl james roxas</h5>
-      <a class="btn" href="#projects">Explore my featured works</a>
+      <a class="btn" id="hero-btn" href="#projects">Explore my featured works</a>
+
       <div class="arrow">
         <i class="fas fa-arrow-down"></i>
       </div>
@@ -135,13 +140,15 @@
     <section class="aboutSection flex flex-ai-c flex-d-c flex-jc-c" id="about">
       <div class="aboutSection__container flex flex-d-c flex-ai-c">
         <h2 class="about-title">ABOUT <span>ME</span></h2>
-        <img src="./assets/about-pic.png" />
+        <img width="263" height="263" src="./assets/about-pic.png" id="about-img" />
 
         <div
           class="
             aboutSection__container__content
             flex flex-d-c flex-ai-c flex-jc-c
           "
+
+          id="container"
         >
           <h3>Hi I am Carl James Roxas</h3>
           <h4>
@@ -206,14 +213,14 @@
       id="services"
     >
       <div class="servicesSection__container flex flex-ai-c flex-jc-c flex-d-c">
-        <h2><span> WHAT I DO / </span> SERVICES</h2>
+        <h2 id="title"><span> WHAT I DO / </span> SERVICES</h2>
         <div class="servicesSection__container__cards">
           <div class="servicesSection__container__cards__row">
             <div
               class="
                 servicesSection__container__cards__card
                 flex flex-ai-c flex-jc-c flex-d-c
-              "
+              " id="card1"
             >
               <img src="./assets/icon-responsive.png" />
               <h3>RESPONSIVE WEBSITE</h3>
@@ -227,6 +234,7 @@
                 servicesSection__container__cards__card
                 flex flex-ai-c flex-jc-c flex-d-c
               "
+              id="card2"
             >
               <img src="./assets/icon-dev.png" />
               <h3>Convert your design into a working website.</h3>
@@ -240,7 +248,7 @@
             class="
               servicesSection__container__cards__card
               flex flex-ai-c flex-jc-c flex-d-c
-            "
+            " id="card3"
           >
             <img src="./assets/icon-collab.png" />
             <h3>Team Collaboration</h3>
@@ -266,7 +274,7 @@
     <!-- Start of Projects Section -->
     <section class="projectsSection flex flex-ai-c flex-d-c" id="projects">
       <div class="projectsSection__container flex flex-ai-c flex-d-c flex-jc-c">
-        <h2><span> FEATURED </span> PROJECTS</h2>
+        <h2 id="project-title"><span> FEATURED </span> PROJECTS</h2>
         <div
           class="
             projectsSection__container__projects
@@ -274,7 +282,7 @@
           "
         >
         <!-- project 1 -->
-            <div class="projectsSection__container__projects__project">
+            <div class="projectsSection__container__projects__project" id="project-1">
               <div class="id-1">
                 <img src="./assets/preview-website.png" alt="" />
                 <div class="content flex flex-ai-c flex-d-c">
@@ -289,7 +297,7 @@
             </div>
 
             <!-- project 2 -->
-            <div class="projectsSection__container__projects__project">
+            <div class="projectsSection__container__projects__project" id="project-2">
               <div class="id-2">
                 <img src="./assets/preview-website.png" alt="" />
                 <div class="content flex flex-ai-c flex-d-c">
@@ -304,7 +312,7 @@
             </div>
 
             <!-- project 3 -->
-            <div class="projectsSection__container__projects__project">
+            <div class="projectsSection__container__projects__project" id="project-3">
               <div class="id-3">
                 <img src="./assets/covid-19-today.png" alt="" />
                 <div class="content flex flex-ai-c flex-d-c">
@@ -332,17 +340,20 @@
         <h3>Have a project in mind?</h3>
         <h1>LET’S ACHIEVE TOGETHER</h1>
         <div class="contactSection__container__content flex flex-d-c flex-ai-c flex-jc-c">
-          <form>
+          <div class="form-group">
+          <form onsubmit="return false" method="POST">
             <div class="form ">
             <label for="name">Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <label for="email">Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <label for="message">Message</label>
             <textarea name="message" id="form__message" cols="30" rows="10"></textarea>
-            <button type="submit"> <i class="fas fa-paper-plane"></i>Send</button>
+            <button id="btn"> <i class="fas fa-paper-plane"></i>Send</button>
             </div>
           </form>
+          <div id="status"></div>
+          </div>
 
           <div class="links flex flex-d-c flex-jc-c flex-ai-c">
             <div class="contact flex flex-ai-c flex-jc-c flex-d-c">
@@ -373,5 +384,13 @@
     <footer class="footer flex flex-ai-c flex-jc-c">
       <h4>&copy; 2021 | Design and Develop with <span>&hearts;</span> Carl James Roxas</h4>
     </footer>
-  </body>
+    
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" ></script>
+<script src="https://smtpjs.com/v3/smtp.js" ></script>
+    <script src="./app/js/script.js" ></script>
+</body>
 </html>
+
+
